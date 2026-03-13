@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+        //for loop--- best used when you know the number of iteration in advance
+
+        let studentList=["Parth","Pratham","Raj","Ranjan"];
+        // for(let i=0;i<studentList.length;i++){
+        //     console.log(studentList[i]);
+        // }
+
+        //while--- used when the number of iteration is uncertain, and the loop should continue as long as a condition is true
+        let x=0;
+        while(x<studentList.length){
+            console.log(studentList[x]);
+            x++
+        }
+
+        //for...of loop
+        for(let y of studentList){
+            console.log(y);
+        }
+
+        let parth={
+            age:20,
+            course:"B Tech",
+            college:"ABESEC",
+            ismarried:false,
+            address:{
+                streetNo:23,
+                area:"DD NAGAR",
+                city:"Gwalior",
+                pincode:235689
+            },
+
+            
+        }
+        for(let z in parth){
+            console.log(parth[z]);
+        }
+
+
+    </script>
+    
+</body>
+</html>
