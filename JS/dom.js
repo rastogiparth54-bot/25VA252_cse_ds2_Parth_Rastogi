@@ -16,6 +16,6 @@ document.getElementsByTagName('body')[0].style.backgroundColor="green";
 let paraBkg=document.getElementById('para');
 
 function colorChange(){
-    paraBkg.style.backgroundColor="blue";
+    paraBkg.style.backgroundColor="red";
 }
 paraBkg.addEventListener('mouseout',colorChange);
